@@ -33,7 +33,7 @@ export const PROJECT_VN = [
       "REST API",
       "JWT / Auth",
     ],
-    link: "https://tradex.elonhash.com/",
+    link: "https://aicex.ai/",
     caseStudy: {
       title: "Chi tiết công việc (tóm tắt)",
       list: [
@@ -179,7 +179,7 @@ export const PROJECT_EN = [
       "REST API",
       "JWT / Auth",
     ],
-    link: "https://tradex.elonhash.com/",
+    link: "https://aicex.ai/",
     caseStudy: {
       title: "Work Summary",
       list: [
