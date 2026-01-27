@@ -1,5 +1,3 @@
-import React from "react";
-
 const Nav = () => {
   return (
     <div className="bg-[#0b0b10] hidden md:block">

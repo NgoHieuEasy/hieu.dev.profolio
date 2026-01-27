@@ -1,4 +1,3 @@
-import { Phone, MessageCircle } from "lucide-react";
 import zaloIcon from "../assets/zalo-icon.png";
 import whatAppIcon from "../assets/whatapp-icon.png";
 import phoneIcon from "../assets/phone-icon.png";
