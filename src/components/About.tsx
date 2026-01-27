@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import ButtonSocialFloat from "./ButtonSocial";
 
 const About = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -30,7 +31,7 @@ const About = () => {
     <section
       id="about"
       ref={ref}
-      className="relative min-h-screen bg-[#0b0b10] text-white flex items-center justify-center overflow-hidden px-6"
+      className="relative min-h-[calc(100vh-200px)] bg-[#0b0b10] text-white flex items-center justify-center overflow-hidden px-6"
     >
       {/* Shape trái */}
       <motion.div
@@ -59,21 +60,21 @@ const About = () => {
 
         <motion.p
           style={{ x: textX, opacity: textOpacity }}
-          className="text-gray-400 leading-relaxed mb-8"
+          className="text-gray-400 text-[18px] leading-relaxed mb-8"
         >
-          With over five years of experience in design, I specialize in
-          branding, web design, and user experience. I love collaborating with
-          businesses that want to stand out and showcase their best side.
+          I am a web developer with a solid background in Information
+          Technology, graduating with a major in IT. I earned an Excellent-level
+          Scientific Research Certificate at the university level, demonstrating
+          strong logical thinking, analytical ability, and deep research
+          skills.With hands-on experience in large-scale projects involving
+          ReactJS,NextJS, Blockchain, E-commerce, and Web3, I am confident in
+          building products with high practicality and commercial value.
           <br />
-          <br />
-          Let’s create something amazing together!
+          <br />I build amazing things on my own.
         </motion.p>
 
-        <motion.button
-          style={{ y: btnY, opacity: btnOpacity }}
-          className="px-8 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 font-semibold hover:scale-105 transition"
-        >
-          CONTACT ME
+        <motion.button style={{ y: btnY, opacity: btnOpacity }}>
+          <ButtonSocialFloat />
         </motion.button>
       </div>
     </section>

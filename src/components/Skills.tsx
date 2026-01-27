@@ -4,9 +4,25 @@ import { useEffect, useState } from "react";
 import { ArrowUp } from "lucide-react";
 
 const skills = [
-  { id: 1, title: "Frontend", desc: "React, Next.js, Tailwind", level: 90 },
-  { id: 2, title: "Backend", desc: "Node.js, Prisma, PostgreSQL", level: 80 },
-  { id: 3, title: "DevOps", desc: "Docker, CI/CD, Nginx", level: 65 },
+  {
+    id: 1,
+    title: "Frontend",
+    desc: "React, Next.js, Tailwind, MUI",
+    level: 100,
+  },
+  {
+    id: 2,
+    title: "Backend",
+    desc: "Node.js,Javascript, Prisma, PostgreSQL",
+    level: 100,
+  },
+  { id: 3, title: "DevOps", desc: "CI/CD for Frontend", level: 100 },
+  {
+    id: 4,
+    title: "Testing",
+    desc: "Playwright E2E, auth flow, role-based access, UI & API testing",
+    level: 100,
+  },
 ];
 
 export default function SkillsPage() {
@@ -34,7 +50,11 @@ export default function SkillsPage() {
   const lineScale = useTransform(scrollYProgress, [0.1, 1], [0, 1]);
 
   return (
-    <section ref={ref} className="relative bg-black px-4 md:px-10 pb-20">
+    <section
+      id="skills"
+      ref={ref}
+      className="relative bg-black px-4 md:px-10 pb-20"
+    >
       {/* TITLE */}
       <motion.h2
         style={{ opacity: titleOpacity, y: titleY }}
@@ -93,10 +113,11 @@ function SkillItem({ skill, index }: { skill: any; index: number }) {
       {/* DOT */}
       <span
         className={`
+          hidden md:block
           absolute top-8 rounded-full bg-white
           h-3 w-3 md:h-4 md:w-4
           left-4 md:left-auto
-          ${index % 2 === 0 ? "md:-right-10" : "md:-left-10"}
+          ${index % 2 === 0 ? "md:-right-10" : "md:-left-8"}
         `}
       />
 
