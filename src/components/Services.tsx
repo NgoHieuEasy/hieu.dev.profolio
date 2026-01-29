@@ -16,14 +16,14 @@ const Services = () => {
   const bgColor = useTransform(
     scrollYProgress,
     [0, 1],
-    ["rgb(242,242,242)", "rgb(167, 161, 161)"],
+    ["rgb(242,242,242)", "rgb(167, 161, 161)"]
   );
 
   // màu chữ từ xám -> đen
   const color = useTransform(
     scrollYProgress,
     [0, 1],
-    ["rgb(160,160,160)", "rgb(20,20,20)"],
+    ["rgb(160,160,160)", "rgb(20,20,20)"]
   );
 
   const y1 = useTransform(scrollYProgress, [0.1, 0.3], [40, 0]);
@@ -125,6 +125,39 @@ const Services = () => {
             returns based on each pool. Users log in by connecting their crypto
             wallets. I was responsible for developing all core frontend features
             during 8 months of development.
+          </motion.p>
+        </div>
+      </div>
+      <motion.div
+        style={{ opacity: opacity1 }}
+        className="w-full h-[5px] bg-gradient-to-r from-transparent via-white/30 to-transparent"
+      />
+      <div className="flex gap-10 ">
+        <motion.h2
+          style={{ opacity: opacity1, color, y: y1 }}
+          className="hidden lg:flex items-center text-6xl md:text-7xl font-extrabold mb-10 "
+        >
+          04
+        </motion.h2>
+
+        <div>
+          <motion.h3
+            style={{ opacity: opacity1, color, y: y1 }}
+            className="text-3xl md:text-6xl font-extrabold mb-10"
+          >
+            Real Estate 40
+          </motion.h3>
+          <motion.p
+            style={{ opacity: opacity1, color, y: y1 }}
+            className="text-xl md:text-2xl leading-relaxed font-medium"
+          >
+            Real Estate 40 is a modern real estate platform that allows users to
+            explore, search, and manage residential and commercial properties
+            for sale or rent. The platform provides detailed property
+            information, image galleries, agent profiles, and user account
+            features such as saved listings and viewing history. I was
+            responsible for designing the frontend architecture and developing
+            all core user-facing features during 8 months of development.
           </motion.p>
         </div>
       </div>

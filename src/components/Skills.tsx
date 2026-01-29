@@ -53,7 +53,7 @@ export default function SkillsPage() {
     <section
       id="skills"
       ref={ref}
-      className="relative bg-black px-4 md:px-10 pb-20"
+      className="relative bg-black px-4 md:px-10 pb-5"
     >
       {/* TITLE */}
       <motion.h2
@@ -117,7 +117,7 @@ function SkillItem({ skill, index }: { skill: any; index: number }) {
           absolute top-8 rounded-full bg-white
           h-3 w-3 md:h-4 md:w-4
           left-4 md:left-auto
-          ${index % 2 === 0 ? "md:-right-10" : "md:-left-8"}
+          ${index % 2 === 0 ? "md:-right-10" : "md:-left-7"}
         `}
       />
 
