@@ -1,0 +1,88 @@
+{
+    "about": "自己紹介",
+    "careerStage": "キャリア段階",
+    "projects": "プロジェクト",
+    "skills": "スキル",
+    "tagline": "情熱的なWeb開発者",
+    "greeting": "こんにちは、私は",
+    "experience": "Web開発における3年以上の経験",
+    "aboutDescription": "私は情報技術（IT）を専攻して卒業したWeb開発者です。大学レベルで優秀な科学研究証明書を取得し、優れた論理的思考力、分析能力、そして深い研究スキルを証明しました。ReactJS、NextJS、ブロックチェーン、Eコマース、Web3を含む大規模プロジェクトでの実務経験を通じて、高い実用性と商業価値を持つプロダクトを構築することに自信があります。",
+    "aboutHighlight": "私は自分自身で素晴らしいものを作り上げます。",
+    "contactMe": "お問い合わせ",
+    "serviceTitleOne": "Tradex - 中央集権型取引所（CEX）",
+    "serviceDesOne": "Tradexは、スムーズで安全な取引体験を提供するために設計されたフル機能の中央集権型取引所です。SpotおよびFutures取引、包括的な入出金システム、KYC認証、強力なアカウント管理機能を備えており、すべてがパフォーマンス、拡張性、ユーザー体験を重視して構築されています。",
+    "serviceTitleTwo": "ApexBit - 自動取引ボット",
+    "serviceDesTwo": "ApexBitは、ユーザーがBinanceまたはBitgetのAPIキーを接続し、取引シグナルに基づいてFuturesおよびSpot取引を自動で実行できる自動取引ボットプラットフォームです。私は8か月間、Lead Frontendとして開発を担当しました。",
+    "serviceTitleThree": "XAI - 投資ファンド",
+    "serviceDesThree": "投資家が複数の投資プールに資金を預け、それぞれのプールに基づいて日次リターンを得ることができる収益型投資プラットフォームです。ユーザーは暗号資産ウォレットを接続してログインします。私は8か月間、すべてのコアなフロントエンド機能の開発を担当しました。",
+    "serviceTitleFour": "Real Estate 40",
+    "serviceDesFour": "Real Estate 40は、住宅および商業用不動産の売買・賃貸物件を検索・管理できる最新の不動産プラットフォームです。詳細な物件情報、画像ギャラリー、エージェントプロフィール、保存済み物件や閲覧履歴などのユーザーアカウント機能を提供します。私は8か月間、フロントエンドアーキテクチャの設計およびすべての主要なユーザー向け機能の開発を担当しました。",
+  
+    "projectOne": {
+      "responsibilities": {
+        "leadFrontend": "Lead Frontend — システムアーキテクチャおよびUI方針の策定",
+        "collaboration": "Backend、BA、QAとの連携",
+        "futuresModule": "Futures取引モジュールの開発",
+        "spotModule": "Spot取引モジュールの開発",
+        "depositWithdraw": "入金・出金フローの構築",
+        "kycFlow": "KYC認証フローの実装",
+        "portfolioAssets": "ポートフォリオおよび資産管理モジュール",
+        "eventsCampaigns": "イベントおよびキャンペーン機能"
+      }
+    },
+  
+    "projectTwo": {
+      "responsibilities": {
+        "frontendArchitecture": "Lead Frontend — アーキテクチャ設計およびUI構造",
+        "tradingSignalSystem": "FuturesおよびSpot取引シグナルシステムの開発",
+        "depositWithdrawal": "入金・出金システムの実装",
+        "adminSystem": "管理システムの構築",
+        "userOverview": "ユーザーアカウント概要画面の構築",
+        "kycVerification": "KYC認証の実装",
+        "voucherPromotion": "バウチャーおよびプロモーションシステムの開発",
+        "authFlow": "ログイン／登録フローの実装"
+      }
+    },
+  
+    "projectThree": {
+      "responsibilities": {
+        "investmentFund": "投資ファンド機能の開発",
+        "depositWithdrawal": "入金・出金機能の開発",
+        "userOverview": "ユーザーアカウント概要の構築",
+        "adminDashboard": "管理ダッシュボードの構築",
+        "eventCampaign": "イベントおよびキャンペーン機能の開発",
+        "fundPerformance": "ファンドパフォーマンス追跡機能の開発",
+        "voucherPromotion": "バウチャーおよびプロモーションシステムの開発",
+        "walletLogin": "ウォレット接続によるログインの実装"
+      }
+    },
+  
+    "projectFour": {
+      "responsibilities": {
+        "propertyListingSearch": "不動産リスティングおよび検索システムの開発",
+        "propertyDetailGallery": "物件詳細ページおよび画像ギャラリーの実装",
+        "realEstateAdmin": "不動産管理システムの構築",
+        "userSavedProperties": "ユーザーアカウントおよび保存済み物件機能の構築",
+        "agentVerification": "エージェントおよびオーナー認証フローの実装",
+        "promotionFeatured": "プロモーション、注目物件、バウチャーシステムの開発",
+        "authFlow": "ログイン／登録フローの実装"
+      }
+    },
+  
+    "technologies": "技術",
+    "mainResponsibilities": "主な担当業務",
+    "visitWebsite": "ウェブサイトを見る",
+    "role": "役割",
+    "lead": "リード",
+    "close": "閉じる",
+    "achievementsRevenue": "実績",
+    "totalRevenue": "総収益は500万USDTを超えました。",
+  
+    "achievements": {
+      "title": "実績",
+      "totalRevenue": "総収益は200万USDTを超えました"
+    },
+    "phone": "電話",
+    "title": "スキル"
+  }
+  

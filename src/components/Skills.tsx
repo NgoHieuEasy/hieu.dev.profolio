@@ -2,6 +2,7 @@ import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { useEffect, useState } from "react";
 import { ArrowUp } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const skills = [
   {
@@ -26,6 +27,7 @@ const skills = [
 ];
 
 export default function SkillsPage() {
+  const { t } = useTranslation();
   const ref = useRef<HTMLDivElement>(null);
   const { scrollY } = useScroll();
   const [show, setShow] = useState(false);
@@ -59,9 +61,9 @@ export default function SkillsPage() {
       <motion.h2
         style={{ opacity: titleOpacity, y: titleY }}
         className="sticky top-20 z-20 text-center
-        text-4xl md:text-7xl font-extrabold text-white"
+        text-4xl md:text-7xl font-extrabold text-white uppercase"
       >
-        SKILLS
+        {t("skills")}
       </motion.h2>
 
       {/* TIMELINE */}
@@ -110,17 +112,6 @@ function SkillItem({ skill, index }: { skill: any; index: number }) {
         ${index % 2 === 0 ? "md:ml-0 md:mr-auto" : "md:ml-auto md:mr-0"}
       `}
     >
-      {/* DOT */}
-      <span
-        className={`
-          hidden md:block
-          absolute top-8 rounded-full bg-white
-          h-3 w-3 md:h-4 md:w-4
-          left-4 md:left-auto
-          ${index % 2 === 0 ? "md:-right-10" : "md:-left-7"}
-        `}
-      />
-
       <h3 className="text-xl md:text-3xl font-bold mb-2">{skill.title}</h3>
 
       <p className="text-sm md:text-base text-zinc-400 mb-6">{skill.desc}</p>

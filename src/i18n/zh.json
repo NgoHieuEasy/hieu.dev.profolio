@@ -1,0 +1,91 @@
+{
+    "about": "关于我",
+    "careerStage": "职业阶段",
+    "projects": "项目",
+    "skills": "技能",
+    "tagline": "一名充满热情的 Web 开发者",
+    "greeting": "你好，我是",
+    "experience": "拥有三年以上 Web 开发经验",
+    "aboutDescription": "我是一名毕业于信息技术（IT）专业的 Web 开发者，并获得了校级优秀科研证书，体现了我扎实的逻辑思维能力、分析能力以及深入研究的能力。我曾参与 ReactJS、NextJS、区块链、电商及 Web3 等大型项目的开发，能够构建具有高度实用性和商业价值的产品。",
+    "aboutHighlight": "我独立打造优秀的产品。",
+    "contactMe": "联系我",
+  
+    "serviceTitleOne": "Tradex - 中心化交易所（CEX）",
+    "serviceDesOne": "Tradex 是一个功能完善的中心化交易所平台，专为流畅且安全的交易体验而设计。支持现货与合约交易，包含充值/提现系统、KYC 认证以及强大的账户管理功能，并以高性能、可扩展性和用户体验为核心进行构建。",
+  
+    "serviceTitleTwo": "ApexBit - 自动交易机器人",
+    "serviceDesTwo": "ApexBit 是一个自动化交易机器人平台，用户可通过连接 Binance 或 Bitget API Key，根据交易信号自动执行现货与合约订单。我在该项目中担任 Lead Frontend，周期为 8 个月。",
+  
+    "serviceTitleThree": "XAI - 投资基金平台",
+    "serviceDesThree": "该平台允许投资者向不同投资池存入资金，并根据每个资金池获取每日收益。用户通过连接加密钱包登录。我负责该项目全部核心前端功能的开发，周期为 8 个月。",
+  
+    "serviceTitleFour": "Real Estate 40",
+    "serviceDesFour": "Real Estate 40 是一个现代化房地产平台，用于房产的买卖与租赁。平台支持房源搜索、详情展示、图片画廊、中介资料、收藏功能及用户账户管理。我负责前端架构设计及所有核心用户功能的开发，周期为 8 个月。",
+  
+    "projectOne": {
+      "responsibilities": {
+        "leadFrontend": "前端负责人 — 系统架构与 UI 方向设计",
+        "collaboration": "与后端、BA、QA 团队协作",
+        "futuresModule": "合约交易模块开发",
+        "spotModule": "现货交易模块开发",
+        "depositWithdraw": "充值 / 提现流程构建",
+        "kycFlow": "KYC 认证流程实现",
+        "portfolioAssets": "资产与投资组合管理模块",
+        "eventsCampaigns": "活动与营销功能开发"
+      }
+    },
+  
+    "projectTwo": {
+      "responsibilities": {
+        "frontendArchitecture": "前端负责人 — 架构规划与 UI 结构设计",
+        "tradingSignalSystem": "现货与合约交易信号系统开发",
+        "depositWithdrawal": "充值 / 提现系统实现",
+        "adminSystem": "后台管理系统构建",
+        "userOverview": "用户账户总览页面构建",
+        "kycVerification": "KYC 身份认证实现",
+        "voucherPromotion": "优惠券与促销系统开发",
+        "authFlow": "登录 / 注册流程实现"
+      }
+    },
+  
+    "projectThree": {
+      "responsibilities": {
+        "investmentFund": "投资基金功能开发",
+        "depositWithdrawal": "充值 / 提现功能开发",
+        "userOverview": "用户账户总览构建",
+        "adminDashboard": "后台管理仪表盘构建",
+        "eventCampaign": "活动与营销功能开发",
+        "fundPerformance": "基金收益表现追踪系统",
+        "voucherPromotion": "优惠券与促销系统开发",
+        "walletLogin": "连接钱包登录实现"
+      }
+    },
+  
+    "projectFour": {
+      "responsibilities": {
+        "propertyListingSearch": "房源列表与搜索系统开发",
+        "propertyDetailGallery": "房源详情页与图片画廊实现",
+        "realEstateAdmin": "房地产后台管理系统构建",
+        "userSavedProperties": "用户账户与收藏房源功能",
+        "agentVerification": "中介 / 房东认证流程实现",
+        "promotionFeatured": "促销、推荐房源与优惠券系统开发",
+        "authFlow": "登录 / 注册流程实现"
+      }
+    },
+  
+    "technologies": "技术栈",
+    "mainResponsibilities": "主要职责",
+    "visitWebsite": "访问网站",
+    "role": "角色",
+    "lead": "负责人",
+    "close": "关闭",
+  
+    "achievements": {
+      "title": "成就",
+      "totalRevenue": "总收入超过 200 万 USDT"
+    },
+  
+    "phone": "电话",
+    "title": "技能"
+  }
+  

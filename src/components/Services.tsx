@@ -1,9 +1,10 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
   const ref = useRef<HTMLDivElement>(null);
-
+  const { t } = useTranslation();
   // Lấy tiến trình scroll của section
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -53,17 +54,13 @@ const Services = () => {
             style={{ opacity: opacity1, color, y: y1 }}
             className="text-3xl md:text-6xl font-extrabold mb-10"
           >
-            Tradex - Centralized Exchange (CEX)
+            {t("serviceTitleOne")}
           </motion.h3>
           <motion.p
             style={{ opacity: opacity1, color, y: y1 }}
             className="text-xl md:text-2xl leading-relaxed font-medium"
           >
-            Tradex is a full-featured centralized exchange platform designed to
-            deliver a seamless and secure trading experience. It supports Spot
-            and Futures trading, along with comprehensive deposit and withdrawal
-            systems, KYC verification, and robust account management — all built
-            with performance, scalability, and user experience at its core.
+            {t("serviceDesOne")}
           </motion.p>
         </div>
       </div>
@@ -84,16 +81,13 @@ const Services = () => {
             style={{ opacity: opacity1, color, y: y1 }}
             className="text-3xl md:text-6xl font-extrabold mb-10"
           >
-            ApexBit - BOT TRADING
+            {t("serviceTitleTwo")}
           </motion.h3>
           <motion.p
             style={{ opacity: opacity1, color, y: y1 }}
             className="text-xl md:text-2xl leading-relaxed font-medium"
           >
-            ApexBit is an automated trading bot platform that allows users to
-            connect their Binance or Bitget API Keys and let the bot execute
-            Futures and Spot orders based on trading signals. I served as the
-            Lead Frontend throughout 8 months of development.
+            {t("serviceDesTwo")}
           </motion.p>
         </div>
       </div>
@@ -114,17 +108,13 @@ const Services = () => {
             style={{ opacity: opacity1, color, y: y1 }}
             className="text-3xl md:text-6xl font-extrabold mb-10"
           >
-            XAI - Investment Fund
+            {t("serviceTitleThree")}
           </motion.h3>
           <motion.p
             style={{ opacity: opacity1, color, y: y1 }}
             className="text-xl md:text-2xl leading-relaxed font-medium"
           >
-            This is a profit-yielding investment platform that allows investors
-            to deposit funds into multiple investment pools and earn daily
-            returns based on each pool. Users log in by connecting their crypto
-            wallets. I was responsible for developing all core frontend features
-            during 8 months of development.
+            {t("serviceDesThree")}
           </motion.p>
         </div>
       </div>
@@ -145,19 +135,13 @@ const Services = () => {
             style={{ opacity: opacity1, color, y: y1 }}
             className="text-3xl md:text-6xl font-extrabold mb-10"
           >
-            Real Estate 40
+            {t("serviceTitleFour")}
           </motion.h3>
           <motion.p
             style={{ opacity: opacity1, color, y: y1 }}
             className="text-xl md:text-2xl leading-relaxed font-medium"
           >
-            Real Estate 40 is a modern real estate platform that allows users to
-            explore, search, and manage residential and commercial properties
-            for sale or rent. The platform provides detailed property
-            information, image galleries, agent profiles, and user account
-            features such as saved listings and viewing history. I was
-            responsible for designing the frontend architecture and developing
-            all core user-facing features during 8 months of development.
+            {t("serviceDesFour")}
           </motion.p>
         </div>
       </div>

@@ -2,10 +2,11 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import ButtonSocialFloat from "./ButtonSocial";
 import { useRef } from "react";
 import LOGO from "../assets/logo.png";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
   const ref = useRef<HTMLDivElement>(null);
-
+  const {  t } = useTranslation();
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
@@ -40,11 +41,11 @@ const Hero = () => {
         className="relative z-10 flex flex-col items-center justify-center text-center min-h-screen px-6"
       >
         <p className="text-gray-400 tracking-widest text-sm mb-4">
-          A PASSIONATE WEB DEVELOPER
+        {t("tagline")}
         </p>
 
         <h1 className="text-[72px] md:text-[96px] font-extrabold leading-none">
-          HI, I’M <span className="text-purple-500">Hiếu (Lewis)</span>
+        {t("greeting")} <span className="text-purple-500">Hiếu (Lewis)</span>
         </h1>
 
         {/* Avatar */}
@@ -62,8 +63,8 @@ const Hero = () => {
         </motion.div>
 
         <p className="text-gray-400 max-w-md mb-8">
-          <span className="text-blue-500 font-semibold">OVER THREE YEARS</span>{" "}
-          OF EXPERIENCE IN WEB DEVELOPMENT ✨
+          <span className="text-blue-500 font-semibold"></span>{" "}
+          {t("experience")} ✨
         </p>
 
         <ButtonSocialFloat />

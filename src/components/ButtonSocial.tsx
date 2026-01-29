@@ -2,18 +2,20 @@ import zaloIcon from "../assets/zalo-icon.png";
 import whatAppIcon from "../assets/whatapp-icon.png";
 import phoneIcon from "../assets/phone-icon.png";
 import { useToastStore } from "../zustand/useToastStore";
+import { useTranslation } from "react-i18next";
 export default function ButtonSocialFloat() {
   const { showToast } = useToastStore();
+  const {  t } = useTranslation();
   return (
     <div className="relative h-16 group">
       {/* Main Button */}
       <button
-        className="px-8 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 font-semibold hover:scale-105 transition"
+        className="px-8 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 font-semibold hover:scale-105 transition uppercase"
         // className="w-20 h-16  bg-gradient-to-r from-purple-500 to-pink-500
         // flex items-center justify-center text-white font-bold
         // transition-transform duration-300 group-hover:scale-110"
       >
-        CONTACT ME
+     {t('contactMe')}
       </button>
 
       {/* Phone */}

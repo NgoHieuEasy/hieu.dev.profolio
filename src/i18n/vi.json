@@ -1,3 +1,82 @@
 {
-  "title": "tiêu đề"
+  "about": "Giới thiệu",
+  "careerStage": "Giai đoạn sự nghiệp",
+  "projects": "Dự án",
+  "skills": "Kỹ năng",
+  "tagline": "Một lập trình viên Web đầy đam mê",
+  "greeting": "Xin chào, tôi là",
+  "experience": "Hơn ba năm kinh nghiệm phát triển web",
+  "aboutDescription": "Tôi là một lập trình viên web với nền tảng vững chắc về Công nghệ Thông tin, tốt nghiệp chuyên ngành CNTT. Tôi đạt Chứng chỉ Nghiên cứu Khoa học cấp trường loại Xuất sắc, thể hiện tư duy logic mạnh mẽ, khả năng phân tích và kỹ năng nghiên cứu chuyên sâu. Với kinh nghiệm thực tế trong các dự án quy mô lớn sử dụng ReactJS, NextJS, Blockchain, Thương mại điện tử và Web3, tôi tự tin xây dựng các sản phẩm có tính ứng dụng cao và giá trị thương mại thực tế.",
+  "aboutHighlight": "Tôi tự mình xây dựng những sản phẩm tuyệt vời.",
+  "contactMe": "Liên hệ",
+  "serviceTitleOne": "Tradex - Sàn giao dịch tập trung (CEX)",
+  "serviceDesOne": "Tradex là nền tảng sàn giao dịch tập trung đầy đủ tính năng, được thiết kế để mang lại trải nghiệm giao dịch mượt mà và an toàn. Hệ thống hỗ trợ giao dịch Spot và Futures, cùng với nạp/rút tiền, xác minh KYC và quản lý tài khoản mạnh mẽ — tất cả đều được xây dựng với hiệu suất, khả năng mở rộng và trải nghiệm người dùng làm trọng tâm.",
+  "serviceTitleTwo": "ApexBit - BOT GIAO DỊCH",
+  "serviceDesTwo": "ApexBit là nền tảng bot giao dịch tự động cho phép người dùng kết nối API Key Binance hoặc Bitget và để bot thực hiện lệnh Futures và Spot dựa trên tín hiệu giao dịch. Tôi đảm nhiệm vai trò Lead Frontend trong suốt 8 tháng phát triển.",
+  "serviceTitleThree": "XAI - Quỹ đầu tư",
+  "serviceDesThree": "Đây là nền tảng đầu tư sinh lợi cho phép nhà đầu tư nạp tiền vào nhiều quỹ khác nhau và nhận lợi nhuận hàng ngày theo từng pool. Người dùng đăng nhập bằng cách kết nối ví tiền điện tử. Tôi chịu trách nhiệm phát triển toàn bộ các tính năng frontend cốt lõi trong 8 tháng.",
+  "serviceTitleFour": "Real Estate 40",
+  "serviceDesFour": "Real Estate 40 là nền tảng bất động sản hiện đại cho phép người dùng tìm kiếm, khám phá và quản lý bất động sản nhà ở và thương mại cho thuê hoặc bán. Nền tảng cung cấp thông tin chi tiết, thư viện hình ảnh, hồ sơ môi giới và các tính năng tài khoản người dùng như lưu tin và lịch sử xem. Tôi chịu trách nhiệm thiết kế kiến trúc frontend và phát triển toàn bộ các tính năng chính trong 8 tháng.",
+
+  "projectOne": {
+    "responsibilities": {
+      "leadFrontend": "Lead frontend — kiến trúc hệ thống & định hướng UI",
+      "collaboration": "Phối hợp với Backend, BA, QA",
+      "futuresModule": "Phát triển module giao dịch Futures",
+      "spotModule": "Phát triển module giao dịch Spot",
+      "depositWithdraw": "Xây dựng luồng Nạp / Rút",
+      "kycFlow": "Triển khai luồng xác minh KYC",
+      "portfolioAssets": "Module quản lý danh mục & tài sản",
+      "eventsCampaigns": "Tính năng sự kiện & chiến dịch"
+    }
+  },
+  "projectTwo": {
+    "responsibilities": {
+      "frontendArchitecture": "Lead frontend — lên kế hoạch kiến trúc & cấu trúc UI",
+      "tradingSignalSystem": "Phát triển hệ thống tín hiệu giao dịch Futures & Spot",
+      "depositWithdrawal": "Triển khai hệ thống Nạp / Rút",
+      "adminSystem": "Xây dựng hệ thống Quản trị",
+      "userOverview": "Xây dựng tổng quan tài khoản người dùng",
+      "kycVerification": "Triển khai xác minh KYC",
+      "voucherPromotion": "Phát triển hệ thống Voucher & Khuyến mãi",
+      "authFlow": "Triển khai luồng Đăng nhập / Đăng ký"
+    }
+  },
+  "projectThree": {
+    "responsibilities": {
+      "investmentFund": "Phát triển các tính năng Quỹ đầu tư",
+      "depositWithdrawal": "Phát triển tính năng Nạp / Rút",
+      "userOverview": "Xây dựng tổng quan tài khoản người dùng",
+      "adminDashboard": "Xây dựng bảng điều khiển Quản trị",
+      "eventCampaign": "Phát triển tính năng Sự kiện & Chiến dịch",
+      "fundPerformance": "Phát triển hệ thống theo dõi hiệu suất quỹ",
+      "voucherPromotion": "Phát triển hệ thống Voucher & Khuyến mãi",
+      "walletLogin": "Triển khai đăng nhập bằng kết nối ví"
+    }
+  },
+  "projectFour": {
+    "responsibilities": {
+      "propertyListingSearch": "Phát triển hệ thống danh sách & tìm kiếm bất động sản",
+      "propertyDetailGallery": "Triển khai trang chi tiết & thư viện hình ảnh bất động sản",
+      "realEstateAdmin": "Xây dựng hệ thống Quản trị bất động sản",
+      "userSavedProperties": "Xây dựng tính năng tài khoản & lưu bất động sản",
+      "agentVerification": "Triển khai xác minh Môi giới / Chủ sở hữu",
+      "promotionFeatured": "Phát triển hệ thống Quảng bá, Tin nổi bật & Voucher",
+      "authFlow": "Triển khai luồng Đăng nhập / Đăng ký"
+    }
+  },
+  "technologies": "Công nghệ",
+  "mainResponsibilities": "Trách nhiệm chính",
+  "visitWebsite": "Truy cập website",
+  "role": "Vai trò",
+  "lead": "Trưởng nhóm",
+  "close": "Đóng",
+  "achievementsRevenue": "Thành tựu",
+  "totalRevenue": "Tổng doanh thu vượt 5 triệu USDT.",
+  "achievements": {
+    "title": "Thành tựu",
+    "totalRevenue": "Tổng doanh thu vượt 2 triệu USDT"
+  },
+  "phone": "Điện thoại",
+  "title": "Kỹ năng"
 }

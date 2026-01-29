@@ -4,41 +4,44 @@ import AICEX from "../assets/AICEX.png";
 import AIBOT from "../assets/AI-BOT.png";
 import XAI from "../assets/XAI.png";
 import REALESTATE from "../assets/REAL-ESTATE.png";
-const cards = [
-  {
-    id: 1,
-    title: "Tradex - Centralized Exchange (CEX)",
-    image: AICEX,
-    content: <ProjectCEXCard />,
-  },
-  {
-    id: 2,
-    title: " ApexBit - BOT TRADING",
-    image: AIBOT,
-    content: <ProjectAIBOTCard />,
-  },
-
-  {
-    id: 3,
-    title: "XAI - Investment Fund",
-    image: XAI,
-    content: <ProjectXAICard />,
-  },
-  {
-    id: 4,
-    title: "Real Estate 40",
-    image: REALESTATE,
-    content: <RealEstateCard />,
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export default function StackingCards() {
+  const { t } = useTranslation();
   const containerRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"],
   });
+
+  const cards = [
+    {
+      id: 1,
+      title: t("serviceTitleOne"),
+      image: AICEX,
+      content: <ProjectCEXCard />,
+    },
+    {
+      id: 2,
+      title: t("serviceTitleTwo"),
+      image: AIBOT,
+      content: <ProjectAIBOTCard />,
+    },
+
+    {
+      id: 3,
+      title: t("serviceTitleThree"),
+      image: XAI,
+      content: <ProjectXAICard />,
+    },
+    {
+      id: 4,
+      title: t("serviceTitleFour"),
+      image: REALESTATE,
+      content: <RealEstateCard />,
+    },
+  ];
 
   return (
     <div>
@@ -96,6 +99,7 @@ function Card({ card, index, progress, content }: any) {
   );
 }
 function ProjectCEXCard() {
+  const { t } = useTranslation();
   return (
     <div className="rounded-2xl lg:bg-zinc-900 lg:border lg:border-zinc-800 lg:p-8 shadow-xl h-full">
       <div className="grid grid-cols-1  gap-8">
@@ -104,7 +108,7 @@ function ProjectCEXCard() {
             <div className="flex justify-between items-center">
               {" "}
               <h4 className="hidden lg:block text-lg font-semibold text-white mb-4">
-                Main Responsibilities
+                {t("mainResponsibilities")}
               </h4>
               <button
                 className="relative overflow-hidden px-6 py-2 rounded-full font-semibold text-white 
@@ -118,7 +122,7 @@ hover:scale-105 transition-transform duration-300"
                   );
                 }}
               >
-                <span className="relative z-10">Visit Website</span>
+                <span className="relative z-10"> {t("visitWebsite")}</span>
 
                 {/* shimmer layer */}
                 <span
@@ -129,21 +133,21 @@ hover:scale-105 transition-transform duration-300"
               </button>
             </div>
             <ul className="space-y-2 text-zinc-300">
-              <li>• Lead frontend — system architecture & UI direction</li>
-              <li>• Collaborate with Backend, BA, QA</li>
-              <li>• Develop Futures trading module</li>
-              <li>• Develop Spot trading module</li>
-              <li>• Build Deposit / Withdraw flows</li>
-              <li>• Implement KYC verification flow</li>
-              <li>• Portfolio & asset management module</li>
-              <li>• Event & campaign features</li>
+              <li>• {t("projectOne.responsibilities.leadFrontend")}</li>
+              <li>• {t("projectOne.responsibilities.collaboration")}</li>
+              <li>• {t("projectOne.responsibilities.futuresModule")}</li>
+              <li>• {t("projectOne.responsibilities.spotModule")}</li>
+              <li>• {t("projectOne.responsibilities.spotModule")}</li>
+              <li>• {t("projectOne.responsibilities.kycFlow")}</li>
+              <li>• {t("projectOne.responsibilities.portfolioAssets")}</li>
+              <li>• {t("projectOne.responsibilities.eventsCampaigns")}</li>
             </ul>
           </section>
 
           {/* TECHNOLOGIES */}
           <section>
             <h4 className="text-lg font-semibold text-white mb-4">
-              Technologies
+              {t("technologies")}
             </h4>
             <div className="flex flex-wrap gap-2">
               {[
@@ -164,21 +168,26 @@ hover:scale-105 transition-transform duration-300"
             </div>
           </section>
           <div className="hidden lg:block rounded-xl bg-zinc-800 p-4 mt-3 border border-zinc-700">
-            <p className="text-sm text-zinc-400">Role</p>
-            <p className="text-lg font-semibold text-white">Lead Frontend</p>
+            <p className="text-sm text-zinc-400"> {t("role")}</p>
+            <p className="text-lg font-semibold text-white">
+              {t("lead")} Frontend
+            </p>
           </div>
         </div>
 
         {/* META */}
         <div className="lg:hidden rounded-xl bg-zinc-800 p-4 border border-zinc-700">
-          <p className="text-sm text-zinc-400">Role</p>
-          <p className="text-lg font-semibold text-white">Lead Frontend</p>
+          <p className="text-sm text-zinc-400">{t("role")}</p>
+          <p className="text-lg font-semibold text-white">
+            {t("lead")} Frontend
+          </p>
         </div>
       </div>
     </div>
   );
 }
 function ProjectAIBOTCard() {
+  const { t } = useTranslation();
   return (
     <div className="rounded-2xl lg:bg-zinc-900 lg:border lg:border-zinc-800 lg:p-8 shadow-xl h-full">
       <div className="grid grid-cols-1  gap-8">
@@ -187,7 +196,7 @@ function ProjectAIBOTCard() {
             <div className="flex justify-between items-center">
               {" "}
               <h4 className="hidden lg:block text-lg font-semibold text-white mb-4">
-                Main Responsibilities
+                {t("mainResponsibilities")}
               </h4>
               <button
                 className="relative overflow-hidden px-6 py-2 rounded-full font-semibold text-white 
@@ -201,7 +210,7 @@ hover:scale-105 transition-transform duration-300"
                   );
                 }}
               >
-                <span className="relative z-10">Visit Website</span>
+                <span className="relative z-10">{t("visitWebsite")}</span>
 
                 {/* shimmer layer */}
                 <span
@@ -212,14 +221,14 @@ hover:scale-105 transition-transform duration-300"
               </button>
             </div>
             <ul className="space-y-2 text-zinc-300">
-              <li>• Lead frontend — architecture planning & UI structure</li>
-              <li>• Developed Futures & Spot trading signal system</li>
-              <li>• Implemented Deposit / Withdrawal system</li>
-              <li>• Built the Admin Management System</li>
-              <li>• Built User Account Overview</li>
-              <li>• Implement KYC verification flow</li>
-              <li>• Developed Voucher & Promotion system</li>
-              <li>• Implemented Login / Register flow</li>
+              <li>• {t("projectTwo.responsibilities.frontendArchitecture")}</li>
+              <li>• {t("projectTwo.responsibilities.tradingSignalSystem")}</li>
+              <li>• {t("projectTwo.responsibilities.depositWithdrawal")}</li>
+              <li>• {t("projectTwo.responsibilities.adminSystem")}</li>
+              <li>• {t("projectTwo.responsibilities.userOverview")}</li>
+              <li>• {t("projectTwo.responsibilities.kycVerification")}</li>
+              <li>• {t("projectTwo.responsibilities.voucherPromotion")}</li>
+              <li>• {t("projectTwo.responsibilities.authFlow")}</li>
             </ul>
           </section>
 
@@ -249,21 +258,26 @@ hover:scale-105 transition-transform duration-300"
             </div>
           </section>
           <div className="hidden lg:block rounded-xl bg-zinc-800 p-4 mt-3 border border-zinc-700">
-            <p className="text-sm text-zinc-400">Role</p>
-            <p className="text-lg font-semibold text-white">Lead Frontend</p>
+            <p className="text-sm text-zinc-400">{t("role")}</p>
+            <p className="text-lg font-semibold text-white">
+              {t("lead")} Frontend
+            </p>
           </div>
         </div>
 
         {/* META */}
         <div className="lg:hidden rounded-xl bg-zinc-800 p-4 border border-zinc-700">
-          <p className="text-sm text-zinc-400">Role</p>
-          <p className="text-lg font-semibold text-white">Lead Frontend</p>
+          <p className="text-sm text-zinc-400">{t("role")}</p>
+          <p className="text-lg font-semibold text-white">
+            {t("lead")} Frontend
+          </p>
         </div>
       </div>
     </div>
   );
 }
 function ProjectXAICard() {
+  const { t } = useTranslation();
   return (
     <div className="rounded-2xl lg:bg-zinc-900 lg:border lg:border-zinc-800 lg:p-8 shadow-xl h-full">
       <div className="grid grid-cols-1  gap-8">
@@ -272,28 +286,28 @@ function ProjectXAICard() {
             <div className="flex justify-between items-center">
               {" "}
               <h4 className="hidden lg:block text-lg font-semibold text-white mb-4">
-                Main Responsibilities
+                {t("mainResponsibilities")}
               </h4>
               <button className="px-5 py-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 font-semibold hover:scale-105 transition mb-2">
                 CLOSED
               </button>
             </div>
             <ul className="space-y-2 text-zinc-300">
-              <li>• Developed Investment Fund features</li>
-              <li>• Developed Deposit / Withdrawal features</li>
-              <li>• Built User Account Overview</li>
-              <li>• Built Admin Management Dashboard</li>
-              <li>• Developed Event & Campaign features</li>
-              <li>• Developed Fund Performance Tracking</li>
-              <li>• Developed Voucher & Promotion system</li>
-              <li>• Implemented Login via Connect Wallet</li>
+              <li>• {t("projectThree.responsibilities.investmentFund")}</li>
+              <li>• {t("projectThree.responsibilities.depositWithdrawal")}</li>
+              <li>• {t("projectThree.responsibilities.userOverview")}</li>
+              <li>• {t("projectThree.responsibilities.adminDashboard")}</li>
+              <li>• {t("projectThree.responsibilities.eventCampaign")}</li>
+              <li>• {t("projectThree.responsibilities.fundPerformance")}</li>
+              <li>• {t("projectThree.responsibilities.voucherPromotion")}</li>
+              <li>• {t("projectThree.responsibilities.walletLogin")}</li>
             </ul>
           </section>
 
           {/* TECHNOLOGIES */}
           <section>
             <h4 className="text-lg font-semibold text-white mb-4">
-              Technologies
+              {t("technologies")}
             </h4>
             <div className="flex flex-wrap gap-2">
               {[
@@ -323,14 +337,14 @@ function ProjectXAICard() {
           >
             <div className="rounded-xl bg-zinc-900 p-4">
               <p className="text-sm text-amber-400 tracking-wide uppercase">
-                🚀 Achievements
+                🚀 {t("totalRevenue")}
               </p>
 
               <p
                 className="mt-1 text-lg font-extrabold text-white 
       bg-gradient-to-r from-amber-300 to-pink-400 bg-clip-text text-transparent"
               >
-                Total revenue exceeded 2 million USDT.
+                {t("totalRevenue")}
               </p>
             </div>
           </div>
@@ -344,14 +358,14 @@ function ProjectXAICard() {
         >
           <div className="rounded-xl bg-zinc-900 p-4">
             <p className="text-sm text-amber-400 tracking-wide uppercase">
-              🚀 Achievements
+              🚀 {t("totalRevenue")}
             </p>
 
             <p
               className="mt-1 text-lg font-extrabold text-white 
       bg-gradient-to-r from-amber-300 to-pink-400 bg-clip-text text-transparent"
             >
-              Total revenue exceeded 2 million USDT.
+              {t("totalRevenue")}
             </p>
           </div>
         </div>
@@ -360,6 +374,7 @@ function ProjectXAICard() {
   );
 }
 function RealEstateCard() {
+  const { t } = useTranslation();
   return (
     <div className="rounded-2xl lg:bg-zinc-900 lg:border lg:border-zinc-800 lg:p-8 shadow-xl h-full">
       <div className="grid grid-cols-1  gap-8">
@@ -368,7 +383,7 @@ function RealEstateCard() {
             <div className="flex justify-between items-center">
               {" "}
               <h4 className="hidden lg:block text-lg font-semibold text-white mb-4">
-                Main Responsibilities
+                {t("mainResponsibilities")}
               </h4>
               <button
                 className="relative overflow-hidden px-6 py-2 rounded-full font-semibold text-white 
@@ -382,7 +397,7 @@ hover:scale-105 transition-transform duration-300"
                   );
                 }}
               >
-                <span className="relative z-10">Visit Website</span>
+                <span className="relative z-10">{t("visitWebsite")}</span>
 
                 {/* shimmer layer */}
                 <span
@@ -393,18 +408,22 @@ hover:scale-105 transition-transform duration-300"
               </button>
             </div>
             <ul className="space-y-2 text-zinc-300">
-              <li>• Developed Property Listing & Search system</li>
-              <li>• Implemented Property Detail & Image Gallery</li>
-              <li>• Built Real Estate Admin Management System</li>
-              <li>• Built User Account & Saved Properties</li>
-              <li>• Implemented Agent / Owner Verification flow</li>
-              <li>• Developed Promotion, Featured Listing & Voucher system</li>
-              <li>• Implemented Login / Register flow</li>
+              <li>
+                • {t("projectFour.responsibilities.propertyListingSearch")}
+              </li>
+              <li>
+                • {t("projectFour.responsibilities.propertyDetailGallery")}
+              </li>
+              <li>• {t("projectFour.responsibilities.realEstateAdmin")}</li>
+              <li>• {t("projectFour.responsibilities.userSavedProperties")}</li>
+              <li>• {t("projectFour.responsibilities.agentVerification")}</li>
+              <li>• {t("projectFour.responsibilities.promotionFeatured")}</li>
+              <li>• {t("projectFour.responsibilities.authFlow")}</li>
             </ul>
           </section>
 
           <div className="hidden lg:block rounded-xl bg-zinc-800 p-4 mt-3 border border-zinc-700">
-            <p className="text-sm text-zinc-400">Role</p>
+            <p className="text-sm text-zinc-400">{t("role")}</p>
             <p className="text-lg font-semibold text-white">
               Dev Frontend And Mobile
             </p>
@@ -413,7 +432,7 @@ hover:scale-105 transition-transform duration-300"
 
         {/* META */}
         <div className="lg:hidden rounded-xl bg-zinc-800 p-4 border border-zinc-700">
-          <p className="text-sm text-zinc-400">Role</p>
+          <p className="text-sm text-zinc-400">{t("role")}</p>
           <p className="text-lg font-semibold text-white">
             Dev Frontend And Mobile
           </p>

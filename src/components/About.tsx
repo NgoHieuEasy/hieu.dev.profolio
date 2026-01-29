@@ -1,10 +1,11 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import ButtonSocialFloat from "./ButtonSocial";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
   const ref = useRef<HTMLDivElement>(null);
-
+  const { t } = useTranslation();
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "center center"],
@@ -55,22 +56,16 @@ const About = () => {
           style={{ x: titleX, opacity: titleOpacity }}
           className="text-5xl md:text-6xl font-extrabold mb-6"
         >
-          ABOUT ME
+          {t("about")}
         </motion.h2>
 
         <motion.p
           style={{ x: textX, opacity: textOpacity }}
           className="text-gray-400 text-[18px] leading-relaxed mb-8"
         >
-          I am a web developer with a solid background in Information
-          Technology, graduating with a major in IT. I earned an Excellent-level
-          Scientific Research Certificate at the university level, demonstrating
-          strong logical thinking, analytical ability, and deep research
-          skills.With hands-on experience in large-scale projects involving
-          ReactJS,NextJS, Blockchain, E-commerce, and Web3, I am confident in
-          building products with high practicality and commercial value.
+          {t("aboutDescription")}
           <br />
-          <br />I build amazing things on my own.
+          <br /> {t("aboutHighlight")}
         </motion.p>
 
         <motion.button style={{ y: btnY, opacity: btnOpacity }}>

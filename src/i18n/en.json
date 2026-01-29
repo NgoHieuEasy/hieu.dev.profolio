@@ -1,3 +1,84 @@
 {
-    "title":"title"
+  "about": "About",
+  "careerStage": "Career Stage",
+  "projects": "Projects",
+  "skills": "Skills",
+  "tagline": "A Passionate Web Developer",
+  "greeting": "Hi, I’m",
+  "experience": "Over three years of experience in web development",
+  "aboutDescription": "I am a web developer with a solid background in Information Technology, graduating with a major in IT. I earned an Excellent-level Scientific Research Certificate at the university level, demonstrating strong logical thinking, analytical ability, and deep research skills. With hands-on experience in large-scale projects involving ReactJS, NextJS, Blockchain, E-commerce, and Web3, I am confident in building products with high practicality and commercial value.",
+  "aboutHighlight": "I build amazing things on my own.",
+  "contactMe": "Contact Me",
+  "serviceTitleOne": "Tradex - Centralized Exchange (CEX)",
+  "serviceDesOne": "Tradex is a full-featured centralized exchange platform designed to deliver a seamless and secure trading experience. It supports Spot and Futures trading, along with comprehensive deposit and withdrawal systems, KYC verification, and robust account management — all built with performance, scalability, and user experience at its core.",
+  "serviceTitleTwo": "ApexBit - BOT TRADING",
+  "serviceDesTwo": "ApexBit is an automated trading bot platform that allows users to connect their Binance or Bitget API Keys and let the bot execute Futures and Spot orders based on trading signals. I served as the Lead Frontend throughout 8 months of development.",
+  "serviceTitleThree": "XAI - Investment Fund",
+  "serviceDesThree": "This is a profit-yielding investment platform that allows investors to deposit funds into multiple investment pools and earn daily returns based on each pool. Users log in by connecting their crypto wallets. I was responsible for developing all core frontend features during 8 months of development.",
+  "serviceTitleFour": "Real Estate 40",
+  "serviceDesFour": "Real Estate 40 is a modern real estate platform that allows users to explore, search, and manage residential and commercial properties for sale or rent. The platform provides detailed property information, image galleries, agent profiles, and user account features such as saved listings and viewing history. I was responsible for designing the frontend architecture and developing all core user-facing features during 8 months of development.",
+
+  "projectOne": {
+    "responsibilities": {
+      "leadFrontend": "Lead frontend — system architecture & UI direction",
+      "collaboration": "Collaborate with Backend, BA, QA",
+      "futuresModule": "Develop Futures trading module",
+      "spotModule": "Develop Spot trading module",
+      "depositWithdraw": "Build Deposit / Withdraw flows",
+      "kycFlow": "Implement KYC verification flow",
+      "portfolioAssets": "Portfolio & asset management module",
+      "eventsCampaigns": "Event & campaign features"
+    }
+  },
+  "projectTwo": {
+    "responsibilities": {
+      "frontendArchitecture": "Lead frontend — architecture planning & UI structure",
+      "tradingSignalSystem": "Developed Futures & Spot trading signal system",
+      "depositWithdrawal": "Implemented Deposit / Withdrawal system",
+      "adminSystem": "Built the Admin Management System",
+      "userOverview": "Built User Account Overview",
+      "kycVerification": "Implement KYC verification flow",
+      "voucherPromotion": "Developed Voucher & Promotion system",
+      "authFlow": "Implemented Login / Register flow"
+    }
+  },
+  "projectThree": {
+    "responsibilities": {
+      "investmentFund": "Developed Investment Fund features",
+      "depositWithdrawal": "Developed Deposit / Withdrawal features",
+      "userOverview": "Built User Account Overview",
+      "adminDashboard": "Built Admin Management Dashboard",
+      "eventCampaign": "Developed Event & Campaign features",
+      "fundPerformance": "Developed Fund Performance Tracking",
+      "voucherPromotion": "Developed Voucher & Promotion system",
+      "walletLogin": "Implemented Login via Connect Wallet"
+    }
+  },
+
+  "projectFour": {
+    "responsibilities": {
+      "propertyListingSearch": "Developed Property Listing and Search system",
+      "propertyDetailGallery": "Implemented Property Detail and Image Gallery",
+      "realEstateAdmin": "Built Real Estate Admin Management System",
+      "userSavedProperties": "Built User Account and Saved Properties feature",
+      "agentVerification": "Implemented Agent and Owner Verification flow",
+      "promotionFeatured": "Developed Promotion, Featured Listing, and Voucher system",
+      "authFlow": "Implemented Login and Register flow"
+    }
+  },
+  "technologies": "Technologies",
+  "mainResponsibilities": "Main Responsibilities",
+  "visitWebsite": "Visit Website",
+  "role": "Role",
+  "lead": "Lead",
+  "close": "Close",
+  "achievementsRevenue": "Achievements",
+  "totalRevenue": "Total revenue exceeded 5 million USDT.",
+
+  "achievements": {
+    "title": "Achievements",
+    "totalRevenue": "Total revenue exceeded 2 million USDT"
+  },
+  "phone": "Phone",
+  "title": "Skills"
 }
