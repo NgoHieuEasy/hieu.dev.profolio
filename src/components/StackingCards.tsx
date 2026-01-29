@@ -50,7 +50,7 @@ export default function StackingCards() {
         id="projects"
         ref={containerRef}
         className="relative h-[300vh] bg-black"
-        style={{ height: `${cards.length * 100}vh` }}
+        style={{ height: `${cards.length * 100 }vh` }}
       >
         {cards.map((card, index) => (
           <Card
@@ -81,7 +81,7 @@ function Card({ card, index, progress, content }: any) {
       className="sticky top-0 min-h-screen flex items-center justify-center px-4"
     >
       <div className="w-full max-w-7xl min-h-[85vh] rounded-3xl border border-white/10 bg-zinc-900 p-5 md:p-8">
-        <h2 className="text-white text-2xl md:text-3xl font-bold mb-6">
+        <h2 className="text-white text-2xl md:text-3xl font-bold mb-2 md:mb-6">
           {card.title}
         </h2>
 
